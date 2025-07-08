@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login User</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: aliceblue;
+      padding: 20px;
+    }
+
+    .container {
+      position: relative;
+      max-width: 700px;
+      width: 100%;
+      background-color: antiquewhite;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .container header {
+      font-size: 1.5rem;
+      color: #333;
+      font-weight: 500;
+      text-align: center;
+
+    }
+
+    .container .form {
+      margin-top: 30px;
+    }
+
+    .form .input-box {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .input-box label {
+      color: #333;
+    }
+
+    .form .gender-box {
+      margin-top: 20px;
+    }
+
+    .gender-box {
+      color: #333;
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+
+    .form :where(.input-box input, .select-box) {
+      position: relative;
+      height: 50px;
+      width: 100%;
+      outline: none;
+      color: #707070;
+      margin-top: 8px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 0 15px;
+    }
+
+    .form .column {
+      display: flex;
+      column-gap: 15px;
+    }
+
+    .form :where(.gender-option , .Interest-option) {
+      display: flex;
+      align-items: center;
+      column-gap: 50px;
+    }
+
+    .form .gender {
+      column-gap: 5px;
+      cursor: pointer;
+    }
+
+    .select-box select {
+      height: 100%;
+      width: 100%;
+      outline: none;
+      border: none;
+      color: #707070;
+      font-size: 1rem;
+    }
+
+    .form :where(.gender input, .gender label) {
+      cursor: pointer;
+    }
+     .Interest-box {
+      color: #333;
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+    .form .Interest {
+      column-gap: 5px;
+      cursor: pointer;
+    }
+   
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    input[type="file"] {
+      width: 100%;
+      padding: 14px;
+      margin-top: 5px;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <header>Membership</header>
+    <form action="#" class="form">
+      <div class="input-box">
+        <label>Full Name</label>
+        <input type="text" name="" id="" placeholder="Enter User Name" required>
+      </div>
+      <div class="input-box">
+        <label>Email Address</label>
+        <input type="email" name="" id="" placeholder="Enter Email Address" required>
+      </div>
+
+      <div class="column">
+        <div class="input-box">
+          <label>Phone Number</label>
+          <input type="tel" name="" id="" placeholder="Enter Phone Number" required>
+        </div>
+        <div class="input-box">
+          <label>Birth Date</label>
+          <input type="date" name="" id="" placeholder="Enter Birth Date" required>
+        </div>
+
+      </div>
+
+      <div class="gender-box">
+        <h3>Gender</h3>
+        <div class="gender-option">
+          <div class="gender">
+            <input type="radio" name="gender" id="check-male" checked>
+            <label for="check-male">Male</label>
+
+          </div>
+          <div class="gender">
+            <input type="radio" name="gender" id="check-female" checked>
+            <label for="check-female">Female</label>
+
+          </div>
+        </div>
+      </div>
+      <div class="input-box">
+        <label>Birth Date</label>
+        <input type="date" name="" id="" placeholder="Enter Birth Date" required>
+      </div>
+      <div class="input-box">
+        <label> Education:</label>
+        <div class="column">
+          <div class="select-box">
+            <select name="" id="">
+              <option value="">Primary</option>
+              <option value="">Secondary</option>
+              <option value="">Certifircate</option>
+              <option value="">Diploma</option>
+              <option value="">Bachelor</option>
+              <option value="">Master</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="Interest-box">
+        <h3>Interest</h3>
+        <div class="Interest-option">
+          <div class="Interest">
+            <input type="checkbox" name="" id="" checked>
+            <label for="check-male">Programming</label>
+
+          </div>
+          <div class="Interest">
+            <input type="checkbox" name="" id="" checked>
+            <label for="">Design</label>
+
+          </div>
+          <div class="Interest">
+            <input type="checkbox" name="" id="" checked>
+            <label for="">Game</label>
+
+          </div>
+        </div>
+      </div>
+      <div class="input-box">
+        <label>File upload</label>
+        <input type="file" name="" id=""  required>
+      </div>
+     <button type="submit">Apply for membership</button>
+    </form>
+  </section>
+
+</body>
+
+</html>
